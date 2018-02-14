@@ -6,7 +6,7 @@ public class TuneBook()
 {
 	ArrayList<String> tunes = new ArrayList<String>();
 	
-	public String loadFile(String)
+	public String toString(String)
 	{
 		BufferedReader inputStream = null;
 		try
@@ -38,11 +38,31 @@ public class TuneBook()
 			}
 		}
 	}
-	public String printTuneBook(String)
+	public String toString(String)
 	{
-		for(int i=0; i<=tunes.lenght; i+1)
-		{
 			System.out.println(tunes);
+	}
+	public Tune findTune(String title)
+	{
+		int closestTi = Integer.Max_Value;
+		String closestTitle = "";
+		for(String t:title)
+		{
+			int ti = EditDistance.MinimumEditDistance(title, t);
+			if(ti == 0)
+			{
+				return title;
+			}
+			if(ti < closestTi)
+			{
+				closestTi = ti;
+				closestTitle = t;
+			}
 		}
+		return closestTitle;
+	}
+	public static void main(String[] args)
+	{
+		
 	}
 }
