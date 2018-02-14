@@ -6,7 +6,7 @@ public class TuneBook()
 {
 	ArrayList<String> tunes = new ArrayList<String>();
 	
-	public void loadFile(String)
+	public String loadFile(String)
 	{
 		BufferedReader inputStream = null;
 		try
@@ -36,6 +36,13 @@ public class TuneBook()
 					e.printStackTrace();
 				}
 			}
+		}
+	}
+	public String printTuneBook(String)
+	{
+		for(int i=0; i<=tunes.lenght; i+1)
+		{
+			System.out.println(tunes);
 		}
 	}
 }
