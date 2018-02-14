@@ -7,7 +7,7 @@ public class Tune()
 	
 	public String toString()
 	{
-		
+		System.out.println(x + title + altTitle + notation + EditDistance.MinimumEditDistance(x, title, altTitle, notation));
 	}
 	public interface Player
 	{
