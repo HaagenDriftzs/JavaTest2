@@ -6,7 +6,7 @@ public class TuneBook()
 {
 	ArrayList<String> tunes = new ArrayList<String>();
 	
-	public void TuneBook(String)
+	public void loadFile(String)
 	{
 		BufferedReader inputStream = null;
 		try
