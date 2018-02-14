@@ -6,7 +6,7 @@ public class TuneBook()
 {
 	ArrayList<String> tunes = new ArrayList<String>();
 	
-	public String toString(String)
+	public String toString()
 	{
 		BufferedReader inputStream = null;
 		try
@@ -38,7 +38,7 @@ public class TuneBook()
 			}
 		}
 	}
-	public String toString(String)
+	public String toString(String tunes)
 	{
 			System.out.println(tunes);
 	}
@@ -60,6 +60,10 @@ public class TuneBook()
 			}
 		}
 		return closestTitle;
+	}
+	public interface Player
+	{
+		void play();
 	}
 	public static void main(String[] args)
 	{
