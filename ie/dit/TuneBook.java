@@ -1,12 +1,15 @@
 package ie.dit;
 
+import java.io.IOException;
+import java.io.FileReader;
 import java.util.ArrayList;
+import java.io.BufferedReader;
 
 public class TuneBook()
 {
 	ArrayList<String> tunes = new ArrayList<String>();
 	
-	public String toString()
+	public void loadData(String l)
 	{
 		BufferedReader inputStream = null;
 		try
