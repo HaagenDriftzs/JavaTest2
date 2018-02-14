@@ -1,4 +1,4 @@
-package ie.dit();
+package ie.dit;
 
 public class Tune()
 {
