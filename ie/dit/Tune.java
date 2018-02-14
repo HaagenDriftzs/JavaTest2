@@ -9,4 +9,8 @@ public class Tune()
 	{
 		
 	}
+	public interface Player
+	{
+		void play();
+	}
 }
